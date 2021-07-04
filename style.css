@@ -1,0 +1,15 @@
+body,html{
+    font-family: sans-serif;
+    margin: 10px 50px;
+}
+
+body * {
+    opacity: 0;
+    transform:  translateX(100px) scale(0.5);
+    transition:  opacity 1s, transform 1s;
+}
+
+.appeared {
+    transform:  translateX(0px) scale(1);
+    opacity: 1;
+}
